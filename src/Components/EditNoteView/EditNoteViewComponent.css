@@ -1,0 +1,73 @@
+.edit-view-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 20%);
+}
+.edit-view {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 20%);
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+}
+.close-edit-view,
+.button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.close-edit-view {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+}
+.field-group {
+    margin-top: 25px;
+}
+.field-group p span {
+    font-size: 12px;
+}
+.note-title-field,
+.note-description-field {
+    resize: none;
+    width: 800px;
+    padding: 15px 8px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 5%);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.note-description-field {
+    height: 145px;
+}
+.buttons-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.button {
+    padding: 10px 35px;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.button-cancel {
+    border: 1px solid #5700C7;
+    color: #5700C7;
+}
+.button-confirm {
+    background-color: #5700C7;
+    border: 1px solid #5700C7;
+    color: #ffffff;
+}

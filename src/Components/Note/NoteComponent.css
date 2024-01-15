@@ -1,0 +1,83 @@
+.note {
+    width: 550px;
+    height: 400px;
+    padding: 25px 15px 15px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    transition: transform 0.15s ease-in-out;
+    position: relative;
+}
+.note::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 15px;
+    background-color: #5700C7;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.15s ease-in-out;
+}
+.note:hover {
+    transform: scale(1.05);
+}
+.note:hover::after {
+    transform: scaleX(1);
+}
+.note-header {
+    display: flex;
+    justify-content: space-between;
+}
+.note-title,
+.note-description {
+    font-weight: lighter;
+    font-size: 14px;
+}
+.note-title-span {
+    font-weight: bold;
+    font-size: 20px;
+}
+.note-description {
+    margin-top: 25px;
+}
+.note-description-span {
+    font-weight: normal;
+    font-size: 16px;
+}
+.note-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.note-created {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 60%);
+}
+.note-button {
+    width: 150px;
+    height: 35px;
+    outline: none;
+    border-radius: 8px;
+    background-color: transparent;
+    margin-left: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.note-button-edit {
+    border: 2px solid #5700C7;
+    color: #5700C7;
+}
+.note-button-delete {
+    border: 2px solid #5700C7;
+    background-color: #5700C7;
+    color: #ffffff;
+}

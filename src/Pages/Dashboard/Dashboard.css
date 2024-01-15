@@ -1,0 +1,28 @@
+.dashboard {
+    padding-top: 30px;
+}
+.dashboard-title {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #5700C7;
+}
+.dashboard-add-button {
+    margin-top: 50px;
+    border: none;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    background-color: #5700C7;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.dashboard-add-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 10%);
+}
